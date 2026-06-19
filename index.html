@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Николай & София — Свадьба 1 августа 2026</title>
+
+<meta property="og:title" content="Николай & София — Свадьба 1 августа 2026">
+<meta property="og:description" content="Приглашаем разделить с нами особенный день">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#f7f1ea">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #f7f1ea;
+    font-family: 'Montserrat', sans-serif;
+    color: #111;
+    overflow-x: hidden;
+}
+
+.wrap {
+    max-width: 430px;
+    margin: auto;
+    background: #fff;
+    padding: 40px 24px;
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    box-shadow: 0 0 40px rgba(0,0,0,0.03);
+    overflow: hidden;
+}
+
+.divider {
+    text-align: center;
+    font-size: 18px;
+    color: #c8b6a6;
+    margin: 25px 0;
+    user-select: none;
+}
+
+.date {
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 6px;
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+/* ========== HERO ========== */
+.hero {
+    position: relative;
+    margin-top: 50px;
+    padding: 0 0 30px;
+}
+
+.she {
+    font-size: 11px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    min-height: 18px;
+    text-align: left;
+}
+
+.she span {
+    display: inline-block;
+    opacity: 0;
+    animation: letterIn 0.4s forwards;
+}
+
+@keyframes letterIn {
+    to { opacity: 1; }
+}
+
+.da-wrapper {
+    width: 320px;
+    max-width: 90vw;
+    margin: 0 0 0 -10px;
+}
+
+.da-real {
+    width: 100%;
+    display: block;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: showDa 2s 1s forwards;
+}
+
+@keyframes showDa {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.hero-info {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.line {
+    width: 70px;
+    height: 1px;
+    background: #ccc;
+    margin: 0 0 25px auto;
+}
+
+.names {
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 2;
+    text-align: right;
+}
+
+.names-sub {
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 2;
+    text-align: right;
+    color: #555;
+}
+
+/* ========== АДРЕСА ========== */
+.location-section {
+    padding: 10px 0 30px;
+}
+
+.location-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.card-small {
+    border: 1px solid #e9dfd3;
+    padding: 14px 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 1.8;
+    box-shadow: 0 6px 20px rgba(0,0,0,.04);
+}
+
+.card-small .icon {
+    margin-bottom: 6px;
+    display: block;
+}
+
+.card-small .icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.map-link {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 8px;
+    letter-spacing: 1px;
+    color: #888;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.map-link:hover {
+    color: #111;
+    border-color: #111;
+}
+
+/* ========== ТАЙМЕР ========== */
+.timer {
+    display: flex;
+    border-top: 1px solid #e9dfd3;
+    border-bottom: 1px solid #e9dfd3;
+    padding: 20px 0;
+    margin: 40px 0;
+}
+
+.timer div {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #e9dfd3;
+}
+
+.timer div:last-child {
+    border: none;
+}
+
+.num {
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.lbl {
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ========== СЕКЦИИ ========== */
+.section {
+    padding: 30px 0;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.text {
+    text-align: center;
+    line-height: 2;
+    font-size: 12px;
+}
+
+/* ========== РАСПИСАНИЕ ========== */
+.schedule {
+    border: 1px solid #e9dfd3;
+    border-radius: 10px;
+    padding: 24px 18px;
+    margin-top: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.04);
+}
+
+.schedule-item {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.schedule-item:last-child {
+    border-bottom: none;
+}
+
+.schedule-time {
+    width: 70px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    flex-shrink: 0;
+}
+
+.schedule-text {
+    font-size: 11px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+/* ========== КАРТОЧКИ ========== */
+.cards {
+    display: grid;
+    gap: 14px;
+}
+
+.card {
+    border: 1px solid #e9dfd3;
+    padding: 18px;
+    border-radius: 10px;
+    font-size: 11px;
+    line-height: 1.8;
+    box-shadow: 0 6px 20px rgba(0,0,0,.04);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,.06);
+}
+
+.card b {
+    display: block;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.card-icon {
+    margin-bottom: 10px;
+}
+
+.card-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* ========== ФОРМА ========== */
+.rsvp input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e9dfd3;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+    background: #fafafa;
+}
+
+.rsvp input[type="text"]:focus {
+    border-color: #c8b6a6;
+    background: #fff;
+}
+
+.rsvp-question {
+    margin: 15px 0 5px;
+}
+
+.rsvp-question p {
+    margin: 0 0 10px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.rsvp-question label {
+    font-size: 11px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    width: 100%;
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #333;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* ========== ЦВЕТОЧНЫЙ ДЕКОР — ВНУТРИ БЕЛОЙ КАРТОЧКИ ========== */
+
+/* Левый верхний угол */
+.floral-top-left {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 250px;
+    height: 420px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.28;
+}
+
+/* Правый верхний угол */
+.floral-top-right {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 250px;
+    height: 420px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.28;
+}
+
+/* Лепесток */
+.petal {
+    position: absolute;
+    border-radius: 50% 50% 50% 0;
+    background: linear-gradient(135deg, #f5ebe0 0%, #e8d5c4 40%, #d4b896 100%);
+    box-shadow: inset 0 -2px 8px rgba(180,150,120,0.3);
+}
+
+.petal-1 { width: 55px; height: 55px; top: 30px; left: 20px; transform: rotate(-30deg); }
+.petal-2 { width: 50px; height: 50px; top: 15px; left: 55px; transform: rotate(15deg); }
+.petal-3 { width: 52px; height: 52px; top: 50px; left: 60px; transform: rotate(60deg); }
+.petal-4 { width: 45px; height: 45px; top: 60px; left: 15px; transform: rotate(-70deg); }
+.petal-5 { width: 40px; height: 40px; top: 40px; left: 75px; transform: rotate(100deg); }
+
+.petal-r1 { width: 55px; height: 55px; top: 30px; right: 20px; left: auto; transform: rotate(30deg); }
+.petal-r2 { width: 50px; height: 50px; top: 15px; right: 55px; left: auto; transform: rotate(-15deg); }
+.petal-r3 { width: 52px; height: 52px; top: 50px; right: 60px; left: auto; transform: rotate(-60deg); }
+.petal-r4 { width: 45px; height: 45px; top: 60px; right: 15px; left: auto; transform: rotate(70deg); }
+.petal-r5 { width: 40px; height: 40px; top: 40px; right: 75px; left: auto; transform: rotate(-100deg); }
+
+/* Второй цветок */
+.petal-s1 { width: 36px; height: 36px; top: 95px; left: 70px; transform: rotate(-20deg); opacity: 0.8; }
+.petal-s2 { width: 32px; height: 32px; top: 83px; left: 95px; transform: rotate(25deg); opacity: 0.8; }
+.petal-s3 { width: 34px; height: 34px; top: 110px; left: 92px; transform: rotate(70deg); opacity: 0.8; }
+.petal-s4 { width: 28px; height: 28px; top: 113px; left: 65px; transform: rotate(-65deg); opacity: 0.8; }
+
+.petal-sr1 { width: 36px; height: 36px; top: 95px; right: 70px; left: auto; transform: rotate(20deg); opacity: 0.8; }
+.petal-sr2 { width: 32px; height: 32px; top: 83px; right: 95px; left: auto; transform: rotate(-25deg); opacity: 0.8; }
+.petal-sr3 { width: 34px; height: 34px; top: 110px; right: 92px; left: auto; transform: rotate(-70deg); opacity: 0.8; }
+.petal-sr4 { width: 28px; height: 28px; top: 113px; right: 65px; left: auto; transform: rotate(65deg); opacity: 0.8; }
+
+/* Листья */
+.leaf {
+    position: absolute;
+    width: 60px;
+    height: 18px;
+    border-radius: 0 80% 0 80%;
+    background: linear-gradient(90deg, #c9b99a 0%, #b8a383 100%);
+    opacity: 0.7;
+}
+
+.leaf-1 { top: 75px; left: 100px; transform: rotate(40deg); }
+.leaf-2 { top: 125px; left: 10px; transform: rotate(-50deg); width: 50px; }
+.leaf-3 { top: 22px; left: 0px; transform: rotate(-10deg); width: 45px; }
+
+.leaf-r1 { top: 75px; right: 100px; left: auto; transform: rotate(-40deg); }
+.leaf-r2 { top: 125px; right: 10px; left: auto; transform: rotate(50deg); width: 50px; }
+.leaf-r3 { top: 22px; right: 0px; left: auto; transform: rotate(10deg); width: 45px; }
+
+/* Веточки */
+.branch {
+    position: absolute;
+    height: 1.5px;
+    background: #c9b99a;
+    opacity: 0.5;
+    border-radius: 2px;
+    transform-origin: left center;
+}
+
+.branch-1 { width: 70px; top: 100px; left: 30px; transform: rotate(25deg); }
+.branch-2 { width: 50px; top: 135px; left: 40px; transform: rotate(-15deg); }
+
+.branch-r1 { width: 70px; top: 100px; right: 30px; left: auto; transform: rotate(-25deg); transform-origin: right center; }
+.branch-r2 { width: 50px; top: 135px; right: 40px; left: auto; transform: rotate(15deg); transform-origin: right center; }
+
+/* Золотая пыльца */
+.sparkle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #d4b896;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.sparkle-1 { top: 55px; left: 50px; width: 3px; height: 3px; }
+.sparkle-2 { top: 35px; left: 80px; width: 2px; height: 2px; }
+.sparkle-3 { top: 105px; left: 25px; width: 2.5px; height: 2.5px; }
+.sparkle-4 { top: 85px; left: 110px; width: 2px; height: 2px; opacity: 0.5; }
+.sparkle-5 { top: 145px; left: 50px; width: 3px; height: 3px; opacity: 0.5; }
+
+.sparkle-r1 { top: 55px; right: 50px; left: auto; width: 3px; height: 3px; }
+.sparkle-r2 { top: 35px; right: 80px; left: auto; width: 2px; height: 2px; }
+.sparkle-r3 { top: 105px; right: 25px; left: auto; width: 2.5px; height: 2.5px; }
+.sparkle-r4 { top: 85px; right: 110px; left: auto; width: 2px; height: 2px; opacity: 0.5; }
+.sparkle-r5 { top: 145px; right: 50px; left: auto; width: 3px; height: 3px; opacity: 0.5; }
+
+/* ========== АНИМАЦИИ ========== */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: none;
+}
+
+/* ========== КНОПКА МУЗЫКИ ========== */
+#musicBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+    padding: 12px 20px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+
+#musicBtn:hover {
+    background: #333;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    text-align: center;
+    padding: 30px 0 20px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+/* ========== МЕДИА-ЗАПРОСЫ ========== */
+@media (max-width: 430px) {
+    .wrap {
+        padding: 30px 16px;
+    }
+    
+    .floral-top-left,
+    .floral-top-right {
+        width: 180px;
+        height: 320px;
+        top: -10px;
+    }
+    
+    .floral-top-left { left: -10px; }
+    .floral-top-right { right: -10px; }
+    
+    .petal-1, .petal-r1 { width: 42px; height: 42px; }
+    .petal-2, .petal-r2 { width: 38px; height: 38px; }
+    .petal-3, .petal-r3 { width: 40px; height: 40px; }
+    .petal-4, .petal-r4 { width: 34px; height: 34px; }
+    .petal-5, .petal-r5 { width: 30px; height: 30px; }
+    
+    .petal-s1, .petal-sr1 { width: 28px; height: 28px; top: 75px; }
+    .petal-s2, .petal-sr2 { width: 24px; height: 24px; top: 65px; }
+    .petal-s3, .petal-sr3 { width: 26px; height: 26px; top: 87px; }
+    .petal-s4, .petal-sr4 { width: 20px; height: 20px; top: 89px; }
+    
+    .leaf { width: 45px; height: 14px; }
+    .leaf-2, .leaf-r2 { width: 38px; }
+    .leaf-3, .leaf-r3 { width: 34px; }
+    
+    .da-wrapper {
+        width: 280px;
+        max-width: 85vw;
+    }
+    
+    .location-cards {
+        max-width: 100%;
+    }
+    
+    .num {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 350px) {
+    .floral-top-left,
+    .floral-top-right {
+        display: none;
+    }
+    
+    .schedule-time {
+        width: 50px;
+        font-size: 10px;
+    }
+    
+    .schedule-text {
+        font-size: 10px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<!-- ========== ЦВЕТОЧНЫЙ ДЕКОР: ЛЕВЫЙ ВЕРХНИЙ УГОЛ ========== -->
+<div class="floral-top-left">
+    <div class="petal petal-1"></div>
+    <div class="petal petal-2"></div>
+    <div class="petal petal-3"></div>
+    <div class="petal petal-4"></div>
+    <div class="petal petal-5"></div>
+    <div class="petal petal-s1"></div>
+    <div class="petal petal-s2"></div>
+    <div class="petal petal-s3"></div>
+    <div class="petal petal-s4"></div>
+    <div class="leaf leaf-1"></div>
+    <div class="leaf leaf-2"></div>
+    <div class="leaf leaf-3"></div>
+    <div class="branch branch-1"></div>
+    <div class="branch branch-2"></div>
+    <div class="sparkle sparkle-1"></div>
+    <div class="sparkle sparkle-2"></div>
+    <div class="sparkle sparkle-3"></div>
+    <div class="sparkle sparkle-4"></div>
+    <div class="sparkle sparkle-5"></div>
+</div>
+
+<!-- ========== ЦВЕТОЧНЫЙ ДЕКОР: ПРАВЫЙ ВЕРХНИЙ УГОЛ ========== -->
+<div class="floral-top-right">
+    <div class="petal petal-r1"></div>
+    <div class="petal petal-r2"></div>
+    <div class="petal petal-r3"></div>
+    <div class="petal petal-r4"></div>
+    <div class="petal petal-r5"></div>
+    <div class="petal petal-sr1"></div>
+    <div class="petal petal-sr2"></div>
+    <div class="petal petal-sr3"></div>
+    <div class="petal petal-sr4"></div>
+    <div class="leaf leaf-r1"></div>
+    <div class="leaf leaf-r2"></div>
+    <div class="leaf leaf-r3"></div>
+    <div class="branch branch-r1"></div>
+    <div class="branch branch-r2"></div>
+    <div class="sparkle sparkle-r1"></div>
+    <div class="sparkle sparkle-r2"></div>
+    <div class="sparkle sparkle-r3"></div>
+    <div class="sparkle sparkle-r4"></div>
+    <div class="sparkle sparkle-r5"></div>
+</div>
+
+<!-- Дата -->
+<div class="date reveal">1 АВГУСТА 2026 ГОДА<br>10:00</div>
+
+<!-- ========== HERO ========== -->
+<div class="hero reveal">
+    <div class="she" id="sheText"></div>
+    
+    <div class="da-wrapper">
+        <img class="da-real" src="da.png" alt="Da">
+    </div>
+    
+    <div class="hero-info">
+        <div class="line"></div>
+        <div class="names">НИКОЛАЙ & СОФИЯ</div>
+        <div class="names-sub">ПРИГЛАШАЮТ НА СВАДЬБУ</div>
+    </div>
+</div>
+
+<div class="divider reveal">♥</div>
+
+<!-- ========== ТАЙМЕР ========== -->
+<div class="timer reveal">
+    <div><div class="num" id="d">0</div><div class="lbl">дней</div></div>
+    <div><div class="num" id="h">0</div><div class="lbl">часов</div></div>
+    <div><div class="num" id="m">0</div><div class="lbl">минут</div></div>
+    <div><div class="num" id="s">0</div><div class="lbl">секунд</div></div>
+</div>
+
+<div class="divider reveal">♥</div>
+
+<!-- ========== АДРЕСА ========== -->
+<div class="section location-section reveal">
+    <div class="location-cards">
+        <div class="card-small">
+            <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5">
+                    <path d="M7 2v20M17 2v20M3 8h18M3 18h18"/>
+                    <line x1="8" y1="8" x2="8" y2="12"/>
+                    <line x1="16" y1="8" x2="16" y2="12"/>
+                </svg>
+            </span>
+            Restaurant Royale<br>
+            г. Липецк, ул. Ленина, 35
+            <br>
+            <a href="https://yandex.ru/maps/?text=Липецк,%20ул.%20Ленина,%2035" target="_blank" class="map-link">📍 Открыть карту</a>
+        </div>
+    </div>
+</div>
+
+<div class="divider reveal">♥</div>
+
+<!-- ========== ПРИВЕТСТВИЕ ========== -->
+<div class="section reveal">
+    <div class="title">Дорогие гости!</div>
+    <div class="text">
+        С огромным волнением и радостью приглашаем вас разделить с нами один из самых важных дней в нашей жизни.<br><br>
+        Совсем скоро состоится событие, которое навсегда останется в наших сердцах.<br><br>
+        Будем счастливы видеть каждого из вас!
+    </div>
+</div>
+
+<div class="divider reveal">♥</div>
+
+<!-- ========== СВАДЕБНОЕ РАСПИСАНИЕ ========== -->
+<div class="section reveal">
+    <div class="title">Свадебное расписание</div>
+    
+    <div class="schedule">
+        <div class="schedule-item">
+            <div class="schedule-time">15:00</div>
+            <div class="schedule-text">Сбор гостей, фуршет</div>
+        </div>
+        <div class="schedule-item">
+            <div class="schedule-time">15:30</div>
+            <div class="schedule-text">Выездная регистрация</div>
+        </div>
+        <div class="schedule-item">
+            <div class="schedule-time">16:00</div>
+            <div class="schedule-text">Начало банкета</div>
+        </div>
+        <div class="schedule-item">
+            <div class="schedule-time">21:00</div>
+            <div class="schedule-text">Чаепитие с тортом</div>
+        </div>
+        <div class="schedule-item">
+            <div class="schedule-time">22:00</div>
+            <div class="schedule-text">Завершение вечера</div>
+        </div>
+    </div>
+</div>
+
+<div class="divider reveal">♥</div>
+
+<!-- ========== ВАЖНАЯ ИНФОРМАЦИЯ ========== -->
+<div class="section reveal">
+    <div class="cards">
+        <div class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5">
+                    <circle cx="9" cy="7" r="3"/>
+                    <circle cx="17" cy="7" r="3"/>
+                    <path d="M5 14c0-2 2-4 4-4s4 2 4 4M11 14c0-2 2-4 4-4s4 2 4 4"/>
+                </svg>
+            </div>
+            <b>Дети</b>
+            Мы очень любим ваших детей, однако формат нашего торжества предполагает вечер только для взрослых.<br>
+            Надеемся на ваше понимание.
+        </div>
+        
+        <div class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3"/>
+                    <circle cx="12" cy="5" r="2"/>
+                    <circle cx="18" cy="9" r="2"/>
+                    <circle cx="18" cy="15" r="2"/>
+                    <circle cx="12" cy="19" r="2"/>
+                    <circle cx="6" cy="15" r="2"/>
+                    <circle cx="6" cy="9" r="2"/>
+                </svg>
+            </div>
+            <b>Цветы</b>
+            Ваши улыбки, тёплые слова и хорошее настроение — лучший подарок для нас.<br><br>
+            Если захотите порадовать нас дополнительно, просим не дарить цветы.
+        </div>
+        
+        <div class="card">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5">
+                    <path d="M12 12c-2-3-5-5-8-4s-3 4-1 7 5 2 9 0"/>
+                    <path d="M12 12c2-3 5-5 8-4s3 4 1 7-5 2-9 0"/>
+                    <circle cx="12" cy="12" r="1.5" fill="#111"/>
+                </svg>
+            </div>
+            <b>Дресс-код</b>
+            Дресс-кода нет. Будем рады видеть вас в любом комфортном образе.
+        </div>
+    </div>
+</div>
+
+<div class="divider reveal">♥</div>
+
+<!-- ========== ПОДТВЕРЖДЕНИЕ ========== -->
+<div class="section rsvp reveal">
+    <div class="title">Подтверждение</div>
+    <div class="subtitle">
+        Пожалуйста, подтвердите своё присутствие<br>
+        до 30 июля 2026 года
+    </div>
+    
+    <form action="https://formsubmit.co/2ltzbro@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Подтверждение на свадьбу — Николай и София">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        
+        <input type="text" name="name" placeholder="Имя и фамилия" required>
+        
+        <div class="rsvp-question">
+            <p>Придёте ли вы на наш праздник?</p>
+            <label><input type="radio" name="attending" value="Да, с удовольствием" required> Да, с удовольствием</label>
+            <label><input type="radio" name="attending" value="К сожалению, не смогу"> К сожалению, не смогу</label>
+        </div>
+        
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<div class="footer reveal">
+    Николай & София<br>
+    1 августа 2026
+</div>
+
+</div>
+
+<!-- ========== МУЗЫКА ========== -->
+<audio id="bgMusic" loop>
+    <source src="music/vivaldi.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn">🎻 Включить музыку</button>
+
+<script>
+const target = new Date('2026-08-01T10:00:00').getTime();
+
+function updateTimer() {
+    let x = target - Date.now();
+    
+    if (x <= 0) {
+        document.getElementById('d').textContent = '0';
+        document.getElementById('h').textContent = '0';
+        document.getElementById('m').textContent = '0';
+        document.getElementById('s').textContent = '0';
+        return;
+    }
+    
+    document.getElementById('d').textContent = Math.floor(x / 86400000);
+    document.getElementById('h').textContent = Math.floor((x % 86400000) / 3600000);
+    document.getElementById('m').textContent = Math.floor((x % 3600000) / 60000);
+    document.getElementById('s').textContent = Math.floor((x % 60000) / 1000);
+}
+
+updateTimer();
+setInterval(updateTimer, 1000);
+
+const text = "Она сказала...";
+const sheElement = document.getElementById('sheText');
+
+text.split('').forEach((letter, i) => {
+    const span = document.createElement('span');
+    span.textContent = letter;
+    span.style.animationDelay = (i * 0.1) + 's';
+    sheElement.appendChild(span);
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, {
+    threshold: 0.15,
+    rootMargin: '0px 0px -50px 0px'
+});
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+const music = document.getElementById('bgMusic');
+music.volume = 0.06;
+
+document.addEventListener('click', () => {
+    if (music.paused && music.src) {
+        music.play().catch(() => {});
+    }
+}, { once: true });
+
+const musicBtn = document.getElementById('musicBtn');
+
+musicBtn.addEventListener('click', () => {
+    if (music.paused) {
+        music.play().catch(() => {
+            alert('Не удалось запустить музыку. Проверьте наличие файла music/vivaldi.mp3');
+        });
+        musicBtn.textContent = '🔇 Выключить музыку';
+    } else {
+        music.pause();
+        musicBtn.textContent = '🎻 Включить музыку';
+    }
+});
+</script>
+
+</body>
+</html>
